@@ -81,6 +81,15 @@ input[type="text"]:focus{
 	box-shadow: 0px 0px 0px;
 }
 /* TOOLTIP FOR MIC */
+a.tip {
+	position: relative;
+    top: -85%;
+    left: -3%;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 7px 10px;
+	z-index: 
+}
 a.tip:hover:before {
 	position: absolute;
 	display: block;
@@ -91,13 +100,14 @@ a.tip:hover:before {
 	border-style: solid;
 	border-width: 5px;
 	height:0;
-	width:0;
+	width:0;	
 	position:absolute;
 	top: 25px;
 	left:1em;
 }
 
 	a.tip:hover:after {
+	opacity: none;
 	display: block;
 	position: absolute; 
 	padding: .5em;
@@ -192,15 +202,7 @@ footer span a{
 .terms a:hover{
 	text-decoration: underline;
 }
-a.tip {
-	position: relative;
-    top: -85%;
-    left: -3%;
-	text-decoration: none;
-	color: #ffffff;
-	padding: 7px 10px;
-	z-index: 
-}
+
 
 
 
