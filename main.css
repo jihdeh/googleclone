@@ -68,6 +68,7 @@ input[type="text"]{
 	width: 40.7%;
 	height: 30px;
 	border:1px solid #cdcdcd;
+	background-size: 15px 20px;	
 	margin-top:30px;
 	opacity: 0.6;
 }
@@ -78,6 +79,39 @@ input[type="text"]:focus{
 	border: 1px solid #135dd9;
 	outline: none;
 	box-shadow: 0px 0px 0px;
+}
+/* TOOLTIP FOR MIC */
+a.tip:hover:before {
+	position: absolute;
+	display: block;
+	content: ""; 
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	transform: rotate(180deg); 
+	border-color: rgba(0,0,0,.9) transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px;
+	height:0;
+	width:0;
+	position:absolute;
+	top: 25px;
+	left:1em;
+}
+
+	a.tip:hover:after {
+	display: block;
+	position: absolute; 
+	padding: .5em;
+	content: attr(title);
+	min-width: 120px;
+	text-align: center;
+	width: auto;
+	height: auto;
+	white-space: nowrap;
+	top: 35px;
+	left: -40px;
+	background: rgba(0,0,0,.9);
+	color: #fff;
+	font-size: 1em;
 }
 button{
 	cursor: default;
@@ -158,3 +192,15 @@ footer span a{
 .terms a:hover{
 	text-decoration: underline;
 }
+a.tip {
+	position: relative;
+    top: -85%;
+    left: -3%;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 7px 10px;
+	z-index: 
+}
+
+
+
