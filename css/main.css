@@ -111,11 +111,8 @@ body {
   border-color: hsl(220, 100%, 65%);
 }
 
-#logo{
-  text-align: center;
-}
-
 #logo {
+  text-align: center;
   background: url('../img/logo.png') center center;
   background-size: 269px 95px;
   width: 269px;
